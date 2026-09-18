@@ -71,19 +71,20 @@ gh repo clone 3mberz/dongcao-illustrations
 cd dongcao-illustrations
 ```
 
-复制 skill 到 Codex：
+复制 skill 到通用 skill 目录（Codex 原生读取，Claude 通过软链读取同一份）：
 
 ```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R ./dongcao-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
+mkdir -p ~/.agents/skills
+cp -R ./dongcao-illustrations ~/.agents/skills/
 ```
 
-或复制到 Claude：
+如果只在某个项目里用，放项目内：
 
 ```bash
-mkdir -p ~/.claude/skills
-cp -R ./dongcao-illustrations ~/.claude/skills/
+cp -R ./dongcao-illustrations <项目>/.agents/skills/
 ```
+
+同一个 skill 只保留一份真实目录，不要同时装在两处。
 
 ---
 
