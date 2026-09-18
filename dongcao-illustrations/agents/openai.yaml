@@ -1,0 +1,6 @@
+interface:
+  display_name: "冬草日记 彩铅配图"
+  short_description: "为中文内容生成彩色铅笔手绘、米白纸底、带冬草 IP 的温暖绘本式配图"
+  default_prompt: "Use $dongcao-illustrations 为这篇内容设计并生成几张冬草日记风格的彩铅配图。"
+policy:
+  allow_implicit_invocation: true

@@ -1,110 +1,65 @@
-# Ian Xiaohei Illustrations
+# 冬草日记 彩铅配图 Skill
 
-> 把中文文章里的判断、流程、状态和隐喻，变成一张张白底、手绘、怪诞但清爽的正文配图。
+> 把内容里的一个瞬间，画成一页彩色铅笔的绘本插图。
 >
-> 16:9 横版 | 小黑 IP | 纯白手绘 | 少量红橙蓝中文批注 | Codex Skill
+> 彩铅排线 | 米白纸底 | 深靛蓝勾边 | 七色藏地色板 | 冬草 IP | Codex / Claude Skill
 
 ---
 
 ## 这个仓库是什么
 
-Ian Xiaohei Illustrations 是一个 Codex Skill，用来指导 AI Agent 为中文文章、帖子、博客、Notion 文档和方法论内容生成正文配图。
+一个给 AI Agent 用的配图 Skill，指导它为中文文章、公众号推文、小红书图文和朋友圈生成统一风格的插画。
 
-它不是通用插画 prompt，也不是 PPT 信息图模板。它的核心目标是：先理解文章里的认知锚点，再把其中一个判断、流程、结构、状态或隐喻，变成一张有记忆点的 16:9 手绘解释图。
+默认视觉 IP 是「冬草」：那曲的藏族女孩，深靛蓝辫子、彩色竖条纹裙、红珊瑚项链，腰上永远挂着那本《冬草日记》。她不是吉祥物，是画面里正在做事的那个人——挖草、筛草、装袋、寄货、晚上写日记。
 
-默认视觉 IP 是“小黑”：一个黑色实心、白点眼、细腿、空表情的小角色。小黑不是吉祥物，不是贴纸，也不是站在角落里的装饰物，而是正在认真参与系统运转的荒诞工作者。
-
-一句话：**让 AI 不只是“配一张图”，而是把文章里的一个关键认知动作画出来。**
+**这套风格的成败九成在媒介上。** 所有颜色都是彩色铅笔斜着一层层排出来的，能看见笔道和纸的颗粒；线稿用深靛蓝色铅笔，不是黑色。一旦变成平涂或渐变，整张图立刻变回普通 AI 插画。
 
 ---
 
 ## 适合谁用
 
-特别适合：
+适合：
 
-- 写中文文章，需要正文配图和文章插图的人
-- 做知识型内容、方法论内容、AI 工作流内容的人
-- 想把抽象判断画成具体隐喻的人
-- 想要一种比 PPT 信息图更轻、更怪、更有个人识别度的配图风格的人
-- 用 Codex 做内容生产，希望稳定复用一套视觉语言的人
+- 做虫草、滋补、高原、产地类内容，需要一套自己的配图语言的人
+- 写公众号长文，想要每篇配图都像同一个人画的
+- 不想用图库，也不想每次重新调 prompt 的人
+- 用 Codex / Claude 做内容生产，希望稳定复用一套视觉风格的人
 
 不适合：
 
-- 想要商业插画、品牌 KV 或精致扁平插画的人
-- 想要传统 PPT 信息图、复杂架构图或流程图的人
-- 想要儿童卡通、可爱 IP、表情包风格的人
-- 想把大量正文、长段解释或完整课程页塞进一张图里的人
-- 需要严格可编辑矢量源文件的人
+- 想要商业插画、品牌 KV、精致扁平插画的人
+- 想要 PPT 信息图、流程图、架构图的人
+- 想要动漫、二次元、3D、盲盒风的人
+- 需要可编辑矢量源文件的人
 
 ---
 
 ## 它会产出什么
 
-默认输出：
+- 一篇内容的 3-6 张 shot list：每张写清楚放哪段后、主题、核心意思、结构类型、冬草在做什么
+- 最终 PNG，保存到 `assets/<文章名>-配图/`
+- 常用比例：公众号正文 16:9、首图和小红书 3:4、朋友圈 1:1
 
-- 16:9 横版正文配图
-- 一篇文章的 4-8 张 shot list
-- 每张图的主题、核心意思、结构类型、小黑动作和中文标注建议
-- 最终 PNG 图片，保存到 workspace 的 `assets/<article-slug>-illustrations/`
-
-默认不输出：
-
-- PPTX / PDF / Keynote
-- SVG / HTML / Canvas 可编辑图
-- 商业海报或封面 KV
-- 大段文字型信息图
+不输出 PPTX / PDF / SVG / 可编辑矢量图。
 
 ---
 
-## 视觉风格
+## 角色基准
 
-这个 skill 默认使用 Ian 的“小黑怪诞正文配图”风格：
+<!-- 把角色三视图放到 dongcao-illustrations/assets/reference/ 后，取消下面这行注释 -->
+<!-- ![冬草 角色三视图](dongcao-illustrations/assets/reference/角色三视图.png) -->
 
-- 纯白背景，不要纸纹、米色、阴影、渐变
-- 黑色手绘线稿，细线，轻微抖动
-- 大量留白，主体只占画面约 40%-60%
-- 少量红色、橙色、蓝色中文手写批注
-- 一张图只表达一个核心动作、结构、状态或隐喻
-- 小黑必须参与核心动作，不能只是装饰
-- 怪诞、有创意、清爽，但不幼稚、不卖萌
+三视图是唯一权威的形象依据。生图时**把它一起附给模型**，脸和比例对不上时以它为准，不以过往生成图为准。
 
 ---
 
 ## 示例效果
 
-### 两个断点
+<!-- 批量生成示例图后补充到这里 -->
 
-![两个断点](examples/images/01-two-breakpoints.png)
+_示例图待补。_
 
-### 按目的分拣
-
-![按目的分拣](examples/images/02-sort-by-purpose.png)
-
-### 一鱼多吃
-
-![一鱼多吃](examples/images/03-one-fish-many-uses.png)
-
-### 承接路径
-
-![承接路径](examples/images/04-handoff-path.png)
-
-### 信息井
-
-![信息井](examples/images/05-information-well.png)
-
-### 想法压机
-
-![想法压机](examples/images/06-idea-press.png)
-
-### 内容发酵
-
-![内容发酵](examples/images/07-content-fermentation.png)
-
-### 信任桥
-
-![信任桥](examples/images/08-trust-bridge.png)
-
-这些图片是风格校准样例，不是构图模板。使用时应该从当前文章重新发明隐喻，不要照抄旧案例的物件和构图。
+示例图只用于校准笔触密度、留白和色彩克制，**不是构图模板**。使用时应该从当前内容重新想画面，不要照抄旧案例的场景和姿势。
 
 ---
 
@@ -113,21 +68,22 @@ Ian Xiaohei Illustrations 是一个 Codex Skill，用来指导 AI Agent 为中�
 克隆仓库：
 
 ```bash
-git clone https://github.com/helloianneo/ian-xiaohei-illustrations.git
-cd ian-xiaohei-illustrations
+gh repo clone 3mberz/dongcao-illustrations
+cd dongcao-illustrations
 ```
 
-复制 skill 到 Codex skills 目录：
+复制 skill 到 Codex：
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R ./ian-xiaohei-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
+cp -R ./dongcao-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-安装后，在 Codex 里使用：
+或复制到 Claude：
 
-```text
-Use $ian-xiaohei-illustrations 为这篇中文文章设计并生成 5 张小黑怪诞正文配图。
+```bash
+mkdir -p ~/.claude/skills
+cp -R ./dongcao-illustrations ~/.claude/skills/
 ```
 
 ---
@@ -137,52 +93,36 @@ Use $ian-xiaohei-illustrations 为这篇中文文章设计并生成 5 张小黑�
 ### 只做配图规划
 
 ```text
-Use $ian-xiaohei-illustrations 先不要生图。
-请分析下面这篇文章哪里值得配图，输出 5 张左右的 shot list。
-每张图写清楚：放在哪段后、主题、核心意思、结构类型、小黑在做什么、建议中文标注词。
+Use $dongcao-illustrations 先不要生图。
+分析下面这篇内容哪里值得配图，输出 4 张左右的 shot list。
+每张写清楚：放哪段后、主题、核心意思、结构类型、冬草在做什么、建议标注词。
 
-<粘贴文章>
+<粘贴内容>
 ```
 
-### 直接生成正文配图
+### 直接生成
 
 ```text
-Use $ian-xiaohei-illustrations 把下面这篇文章生成 4 张小黑怪诞正文配图。
-要求：16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文手写批注。
+Use $dongcao-illustrations 把下面这篇内容生成 4 张配图。
+16:9，彩铅排线、米白纸底、深靛蓝线稿，三件识别物都要在。
 
-<粘贴文章>
+<粘贴内容>
 ```
 
-### 为单个概念生成一张图
+### 单个主题一张图
 
 ```text
-Use $ian-xiaohei-illustrations 为“信任不是喊出来的，而是一块证据一块证据铺过去”生成一张正文配图。
-画面要怪诞但清爽，小黑必须承担核心动作。
+Use $dongcao-illustrations 为「好草和次草，摊在手心里一比就知道」生成一张配图。
+冬草要真的在做这个动作，不是站在旁边。
 ```
 
-### 去掉图里的标题或错误文字
+### 修图
 
 ```text
-Use $ian-xiaohei-illustrations 帮我编辑这张图，去掉左上角的“流程图”标题，其他内容保持不变。
+Use $dongcao-illustrations 这张图变成平涂了，帮我改回彩铅排线，线稿换成深靛蓝。
 ```
 
 更多示例见 [examples/prompts.md](examples/prompts.md)。
-
----
-
-## 工作流程
-
-这个 skill 的流程是：
-
-1. 读取文章、Markdown、Notion 内容、截图或用户给的主题
-2. 提炼核心观点、认知转折、流程结构和适合视觉化的段落
-3. 先输出 shot list：每张图只选一个认知锚点
-4. 为每张图选择结构类型：Workflow、系统局部、前后对比、角色状态、概念隐喻、方法分层、地图路线或小漫画分镜
-5. 重新发明一个低科技、怪诞但成立的物理隐喻
-6. 让小黑承担核心动作
-7. 每张图单独调用图像模型生成
-8. 按 QA checklist 检查：白底、留白、小黑动作、中文标注、非 PPT 感、非旧案例复刻
-9. 保存最终 PNG，并报告用途和路径
 
 ---
 
@@ -193,86 +133,45 @@ Use $ian-xiaohei-illustrations 帮我编辑这张图，去掉左上角的“流�
 ├── README.md
 ├── LICENSE
 ├── NOTICE.md
-├── assets/
-│   └── ian-wechat-qr.jpg
 ├── examples/
-│   ├── images/
-│   │   ├── 01-two-breakpoints.png
-│   │   ├── 02-sort-by-purpose.png
-│   │   └── ...
 │   └── prompts.md
-└── ian-xiaohei-illustrations/
+└── dongcao-illustrations/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
     ├── assets/
-    │   └── examples/
+    │   ├── reference/          # 角色三视图，形象基准
+    │   └── examples/           # 风格样例
     └── references/
-        ├── style-dna.md
-        ├── xiaohei-ip.md
+        ├── style-dna.md        # 媒介、色板、禁忌
+        ├── dongcao-ip.md       # 角色定义
         ├── composition-patterns.md
         ├── prompt-template.md
         └── qa-checklist.md
 ```
 
-真正需要安装到 Codex 的是子目录：
-
-```text
-ian-xiaohei-illustrations/
-```
-
-根目录的 README、LICENSE、NOTICE 和 examples 是 GitHub 分享文档。
+需要安装的是子目录 `dongcao-illustrations/`。根目录的 README、LICENSE、NOTICE 和 examples 是 GitHub 分享文档。
 
 ---
 
 ## 注意事项
 
-- 图片里的中文文字越短越稳定。
-- 每张图只讲一个核心结构，不要把文章做成说明书。
-- 小黑必须承担核心动作；如果去掉小黑画面仍然完全成立，说明小黑太装饰了。
-- 示例图只用于校准线条密度、留白、颜色克制和小黑参与方式，不要复刻构图。
-- AI 图像模型可能出现错字、幻觉标签、风格漂移或多余标题，生成后需要检查。
-- 如果中文错字严重，优先减少标注词并重生成。
+- 生图时一定附上角色三视图，模型看图比看字准。
+- 图里的中文越短越稳定，能不写字就不写字。
+- 一张图只画一个瞬间。
+- 冬草必须在做事；如果去掉她画面仍然成立，说明她太装饰了。
+- AI 会出现错字、风格漂移、多余水印，生成后按 `qa-checklist.md` 检查。
+- 最容易垮的是媒介：发现图"一眼 AI"，先回去看排线和纸底，不是看构图。
 
 ---
 
-## 相关项目
+## 致谢
 
-- [Ian Handdrawn PPT](https://github.com/helloianneo/ian-handdrawn-ppt) — 中文手绘技术 PPT-style 页面图生成 Skill
-- [Awesome Claude Code Skills](https://github.com/helloianneo/awesome-claude-code-skills) — Claude Code Skills / Agents / Plugins 精选合集
-- [Obsidian + Claude AI Second Brain](https://github.com/helloianneo/obsidian-ai-second-brain) — Obsidian + Claude AI 个人知识库搭建指南
+本仓库改写自 [Ian (伊恩)](https://github.com/helloianneo) 的开源项目 [ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)，沿用了它的 skill 结构和工作流设计，视觉风格与 IP 全部替换为《冬草日记》。
 
----
+改写方法参考了 [@SjwEsther](https://x.com/SjwEsther) 分享的「在开源 Skill 基础上定制自己 IP 配图」的八步流程。
 
-## 关于作者
-
-**Ian (伊恩)** — 产品设计师 / 一人公司实践者 / AI Builder
-
-用 AI 团队打造一人公司。
-
-- GitHub: [helloianneo](https://github.com/helloianneo)
-- X/Twitter: [@ianneo_ai](https://x.com/ianneo_ai)
-- 网站: [www.ianneo.xyz](https://www.ianneo.xyz)
-- 微信: `ianneoxyz`
-- 邮箱: hello.neoc@gmail.com
-
----
-
-## 继续探索
-
-这套小黑配图 Skill，只是我用 AI 搭建个人生产系统里的一个小工具。
-
-如果你也在用 AI 做内容、知识库、工作流或产品化，可以继续看我的网站：[www.ianneo.xyz](https://www.ianneo.xyz)。
-
-只想先观察，可以关注我的 [X/Twitter](https://x.com/ianneo_ai)。
-
-想了解 Indie Builders Club，加微信：`ianneoxyz`，备注「OPC」。
-
-<p>
-  <img src="assets/ian-wechat-qr.jpg" alt="Ian 微信二维码" width="120">
-</p>
-
-不方便扫码也可以搜索微信：`ianneoxyz`。
+感谢两位的开源和分享。
 
 ---
 
