@@ -10,13 +10,23 @@
 Generate one standalone colored-pencil illustration in a warm children's-book style.
 
 MEDIUM (most important — get this right first):
-Drawn with colored pencils on cream ivory textured paper (#F5F2EC), visible paper
-grain. Every colored area is built from visible diagonal pencil hatching strokes,
-layered, uneven pressure — NEVER flat digital fill, never gradient, never airbrush,
-never thick paint. All outlines drawn in DEEP INDIGO BLUE pencil (#152A55), never
-black. Outlines show slight repeated searching strokes, gently wobbly, hand-made.
-Ground shadow is only a small patch of loose pale-blue pencil scribble under the feet.
+Drawn with colored pencils on cream ivory textured paper (#F5F2EC). Every colored
+area is built from FINE, DENSE, EVENLY-DIRECTED pencil hatching, layered in several
+light passes — thin strokes close together, not coarse scribble. THE PAPER GRAIN MUST
+SHOW THROUGH THE COLOR: never fully covered, never saturated flat. Colors stay muted
+and settled, softened by the paper — never bright, never neon, never marker-like,
+never waxy crayon. NEVER flat digital fill, never gradient, never airbrush, never
+thick paint. All outlines drawn in DEEP INDIGO BLUE pencil (#152A55), never black.
+Outlines show slight repeated searching strokes, gently wobbly, hand-made. Ground
+shadow is only a small patch of loose pale-blue pencil scribble under the feet.
 Flat even light, no drama, no highlights, no cast shadows. Warm, quiet, tactile.
+
+INTENT (equally important):
+This is a quiet moment from her ordinary day on the plateau — not an instructional
+diagram. She is doing something for herself, not demonstrating it for the viewer.
+Nothing in the frame addresses the viewer. No before/after comparison, no numbered
+steps, no cross marks, no right/left "correct vs wrong", no signage, no held-up
+placards. The picture should read as "this is her life", not "here is how to do it".
 
 CHARACTER — 冬草, fixed, identical every time:
 A young Tibetan girl, chibi proportions about 4.5 heads tall — large round head,
@@ -55,16 +65,23 @@ ACTION:
 PROPS:
 {物件1} / {物件2} / {可选物件3}
 
-CHINESE HANDWRITTEN LABELS (optional, 0-4 max):
-{短标注，2-8 字，深靛蓝或橘红铅笔手写体}
+CHINESE LABELS — default NONE. Only if unavoidable:
+{最多 4 处，每处 2-8 字}
+If any text appears it must be HAND-WRITTEN WITH A PENCIL, slightly irregular,
+in deep indigo or orange-red. Never a printed or digital typeface. Never numbers,
+doses, temperatures, durations, step numbers, slogans or headlines.
 
 CONSTRAINTS:
-One image, one moment. Subject occupies about 45%-65% of the canvas. Leave at least
-30% as clean untouched paper. Do not use a pure white background. Do not use black
-outlines. Do not flat-fill any area. No gradients, no drop shadows, no glossy
-highlights, no vector look, no 3D, no anime style, no photorealism. No frame, no
-title bar, no watermark, no logo. Keep her face and proportions consistent with the
-attached character sheet. Aspect ratio {16:9 / 3:4 / 1:1}.
+One image, one moment. EXACTLY ONE 冬草 in the frame — never two of her, never a
+comic strip of the same character. Her expression is always the same small gentle
+closed-mouth smile — never an open surprised mouth, never exaggerated. No manga
+emotion symbols: no exclamation strokes, no sweat drops, no sparkle eyes, no hearts.
+Subject occupies about 45%-65% of the canvas. Leave at least 30% as clean untouched
+paper. Do not use a pure white background. Do not use black outlines. Do not flat-fill
+any area. No gradients, no drop shadows, no glossy highlights, no vector look, no 3D,
+no anime style, no photorealism. No frame, no title bar, no bottom caption banner, no
+watermark, no logo. Keep her face and proportions consistent with the attached
+character sheet. Aspect ratio {16:9 / 3:4 / 1:1}.
 ```
 
 ## 常用比例
@@ -94,6 +111,17 @@ Edit the provided image. Remove only the text "{要删除的文字}". Fill that 
 the same cream paper texture, matching the surrounding blank paper. Preserve
 everything else exactly: character, props, labels, pencil stroke style, composition,
 aspect ratio. Do not add any new text or objects.
+```
+
+### 从讲课改回日常（最常用）
+
+```text
+Regenerate this illustration. Keep the character, the style and the medium, but change
+what it is doing: right now it reads as an instructional diagram. Remove the
+comparison / numbered steps / cross marks / captions entirely. Instead show ONE quiet
+moment from her ordinary day in which this simply happens by itself, as something she
+does for herself. One 冬草 only. No text unless unavoidable, and any text must be
+hand-written in pencil. It should read as "this is her life", not "here is how to do it".
 ```
 
 ### 让动作更实
