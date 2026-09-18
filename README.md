@@ -46,8 +46,7 @@
 
 ## 角色基准
 
-<!-- 把角色三视图放到 dongcao-illustrations/assets/reference/ 后，取消下面这行注释 -->
-<!-- ![冬草 角色三视图](dongcao-illustrations/assets/reference/角色三视图.png) -->
+![冬草 角色三视图](dongcao-illustrations/assets/reference/角色三视图.png)
 
 三视图是唯一权威的形象依据。生图时**把它一起附给模型**，脸和比例对不上时以它为准，不以过往生成图为准。
 
