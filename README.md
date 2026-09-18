@@ -54,9 +54,18 @@
 
 ## 示例效果
 
-<!-- 批量生成示例图后补充到这里 -->
+全部 16:9，1664×936。
 
-_示例图待补。_
+| | |
+| --- | --- |
+| ![挖草](dongcao-illustrations/assets/examples/01-挖草.png) | ![对光看](dongcao-illustrations/assets/examples/02-对光看.png) |
+| 蹲在草甸上挖草 | 举起一根对着光看 |
+| ![筛草](dongcao-illustrations/assets/examples/03-筛草.png) | ![码草](dongcao-illustrations/assets/examples/04-码草.png) |
+| 竹筛筛草 | 码进铺了棉纸的木盒 |
+| ![贴标签](dongcao-illustrations/assets/examples/05-贴标签.png) | ![烧水](dongcao-illustrations/assets/examples/06-烧水.png) |
+| 扎紧袋口贴标签 | 炉子边烧水 |
+| ![走碎石坡](dongcao-illustrations/assets/examples/07-走碎石坡.png) | ![写日记](dongcao-illustrations/assets/examples/08-写日记.png) |
+| 背草篓走碎石坡 | 灯下写日记 |
 
 示例图只用于校准笔触密度、留白和色彩克制，**不是构图模板**。使用时应该从当前内容重新想画面，不要照抄旧案例的场景和姿势。
 
