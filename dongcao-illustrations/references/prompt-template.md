@@ -9,8 +9,22 @@
 ```text
 Generate one standalone colored-pencil illustration in a warm children's-book style.
 
+BACKGROUND — pick one before anything else:
+
+[A] Cream paper (default, for standalone images):
+    ...on cream ivory textured paper (#F5F2EC), visible paper grain.
+
+[B] Transparent (when the image will be placed into another layout — a card,
+    poster, web page, slide, print piece):
+    Fully transparent background, PNG with alpha. Nothing behind the subject:
+    no paper, no paper grain, no white, no off-white, no vignette, no ground
+    plane except the small pencil shadow directly under the feet. Do NOT paint
+    a cream background and expect it to be cut out later — output transparency
+    directly. Paper texture belongs to the page this will sit on, not to the
+    drawing.
+
 MEDIUM (most important — get this right first):
-Drawn with colored pencils on cream ivory textured paper (#F5F2EC). Every colored
+Drawn with colored pencils{在此接上所选的底}. Every colored
 area is built from FINE, DENSE, EVENLY-DIRECTED pencil hatching, layered in several
 light passes — thin strokes close together, not coarse scribble. THE PAPER GRAIN MUST
 SHOW THROUGH THE COLOR: never fully covered, never saturated flat. Colors stay muted
@@ -84,6 +98,15 @@ watermark, no logo. Keep her face and proportions consistent with the attached
 character sheet. Aspect ratio {16:9 / 3:4 / 1:1}.
 ```
 
+## 常用底
+
+| 用途 | 底 |
+| --- | --- |
+| 公众号正文配图、小红书、朋友圈 | 米白纸底 |
+| 卡片、海报、网页、PPT、印刷品 | 透明底 |
+
+拿不准就问用户这张图要单独发还是要嵌进别的版面。
+
 ## 常用比例
 
 | 用途 | 比例 |
@@ -93,6 +116,16 @@ character sheet. Aspect ratio {16:9 / 3:4 / 1:1}.
 | 朋友圈 / 头像 / 单图 | 1:1 |
 
 ## 图像编辑提示
+
+### 把米白底改成透明底
+
+```text
+Edit the provided image. Keep the character, the composition, the colors and the
+colored-pencil rendering exactly as they are. Remove the background completely:
+output a PNG with a fully transparent background. Keep only the subject and the
+small pencil shadow under the feet. Remove all paper texture and paper grain from
+the background — do not replace it with white or any other color.
+```
 
 ### 修媒介（最常用）
 
